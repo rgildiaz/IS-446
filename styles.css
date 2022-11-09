@@ -1,0 +1,38 @@
+html {
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    margin: 3em 1em;
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100vw;
+    text-align: center;
+}
+
+.card {
+    background-color: aliceblue;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    width: fit-content;
+}
