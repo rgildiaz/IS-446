@@ -1,0 +1,93 @@
+html {
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+header {
+    position: sticky;
+    background-color: lightgray;
+    padding: 2em;
+    width: 100%;
+    border-bottom: 2px solid gray;
+}
+
+header h1 {
+    border-right: 2px solid black;
+    margin: 0;
+    padding-right: 15px;
+    display: inline;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: black;
+}
+
+header h1 a:hover {
+    color: rgb(95, 95, 95);
+}
+
+header h2 {
+    margin: 0;
+    padding: 10px;
+    display: inline;
+}
+
+header .user {
+    position: absolute;
+    right: 100px;
+    top: 1em;
+    width: fit-content;
+    text-align: center;
+}
+
+header .user .person {
+    size: 2em;
+}
+
+header .user p {
+    margin: 0;
+}
+
+main {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-wrapper {
+    width: fit-content;
+    height: fit-content;
+}
+
+.block {
+    margin: 3em 0;
+}
+
+h3 {
+    margin-left: 1em;
+}
+
+table, tr, th, td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 55em;
+}
+
+th {
+    background-color: lightgray;
+    padding: 5px 10px;
+}
+
+td {
+    padding: 5px 10px;
+}
