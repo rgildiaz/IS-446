@@ -1,3 +1,3 @@
-# IS-401 - Systems Analysis and Design
+# IS-446 - Systems Analysis and Design
 
-Code and notes for IS 401.
+Code and notes for IS 446.
