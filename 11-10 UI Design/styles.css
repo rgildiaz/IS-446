@@ -10,10 +10,10 @@ body {
 
 header {
     position: sticky;
-    background-color: lightgray;
+    background-color: aliceblue;
     padding: 2em;
     width: 100%;
-    border-bottom: 2px solid gray;
+    border-bottom: 2px solid lightblue;
 }
 
 header h1 {
@@ -74,7 +74,10 @@ h3 {
     margin-left: 1em;
 }
 
-table, tr, th, td {
+table,
+tr,
+th,
+td {
     border: 1px solid black;
 }
 
@@ -90,4 +93,144 @@ th {
 
 td {
     padding: 5px 10px;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 0.5em;
+    grid-template-areas:
+        ".      .       img     img"
+        "name   name    img     img"
+        "price  stock   img     img"
+        "desc   desc    img     img"
+        "desc   desc    img     img"
+        "submit submit  img     img"
+        ".      .       img     img";
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    width: 750px;
+    padding: 2em 0;
+}
+
+.grid form {
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: fit-content;
+}
+
+form input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid gray;
+    font-size: 18px;
+}
+
+#name-form {
+    grid-area: name;
+}
+
+#name-form input {
+    font-size: 30px;
+}
+
+#price-form {
+    grid-area: price;
+}
+
+#stock-form {
+    grid-area: stock;
+}
+
+#desc-form {
+    grid-area: desc;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-top: 10px;
+    position: relative;
+}
+
+#desc-form span {
+    padding: 1em;
+    width: 100%;
+    height: 3em;
+}
+
+#desc-form label {
+    position: absolute;
+    top: -25px;
+    left: 0.2em;
+    color: gray;
+}
+
+#submit-form {
+    grid-area: submit;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#submit-form input {
+    border: 1px solid gray;
+    border-radius: 10px;
+    color: gray;
+    width: fit-content;
+    padding: 0.2em 2em;
+}
+
+#submit-form input:hover {
+    border: 1px solid black;
+    color: black;
+    cursor: pointer;
+}
+
+#image-form {
+    grid-area: img;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.upload-image-label {
+    display: inline-block;
+    border: 1px solid gray;
+    border-radius: 30px;
+    cursor: pointer;
+    text-align: center;
+    background-color: lightgray;
+    width: 270px;
+    height: 240px;
+    padding-top: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.upload-image-label:hover {
+    border-color: black;
+}
+
+.upload-image-label>* {
+    color: gray;
+}
+
+.upload-image-label:hover>* {
+    color: black;
+}
+
+.upload-image-label .plus {
+    font-size: 50px;
+}
+
+.upload-image-label .desc {
+    font-style: italic;
 }
